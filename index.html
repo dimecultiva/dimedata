@@ -13,7 +13,7 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #050505; color: #ffffff; margin: 0; overflow-x: hidden; }
         #vanta-bg { position: fixed; z-index: -1; top: 0; left: 0; width: 100%; height: 100vh; }
-        .glass-card { background: rgba(10, 10, 10, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-card { background: rgba(10, 10, 10, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .gradient-text { background: linear-gradient(90deg, #ffffff, #888888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .service-card:hover { border-color: rgba(255, 255, 255, 0.2); transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
@@ -23,78 +23,112 @@
     <div id="vanta-bg"></div>
 
     <nav class="fixed w-full z-50 glass-card border-b-0">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-widest uppercase">DIMECULTIVA</div>
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-5 flex justify-between items-center">
+            <div class="text-lg md:text-xl font-extrabold tracking-widest uppercase">DIMECULTIVA</div>
             <div class="hidden md:flex space-x-10 text-sm font-semibold text-gray-400">
-                <a href="#problem" class="hover:text-white transition">The Problem</a>
+                <a href="#about" class="hover:text-white transition">Who We Are</a>
                 <a href="#services" class="hover:text-white transition">Capabilities</a>
+                <a href="#why-us" class="hover:text-white transition">Why Us</a>
             </div>
-            <a href="book-demo.html" class="bg-white text-black px-6 py-2 rounded-sm font-bold hover:bg-gray-200 transition text-sm uppercase tracking-wide">Book Demo</a>
+            <a href="book-demo.html" class="bg-white text-black px-4 md:px-6 py-2 rounded-sm font-bold hover:bg-gray-200 transition text-xs md:text-sm uppercase tracking-wide">Book Demo</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="inline-block py-1 px-4 rounded-full border border-gray-700 text-xs font-semibold text-gray-400 mb-8 uppercase tracking-widest glass-card">
+    <section class="min-h-[90vh] flex flex-col justify-center items-center text-center px-4 md:px-6 pt-24 md:pt-20">
+        <div class="inline-block py-1 px-4 rounded-full border border-gray-700 text-[10px] md:text-xs font-semibold text-gray-400 mb-8 uppercase tracking-widest glass-card">
             Data Infrastructure for SMMEs
         </div>
-        <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tighter leading-tight">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold mb-6 tracking-tighter leading-tight">
             Stop Operating <br><span class="gradient-text">Blind.</span>
         </h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed font-light">
-            We build bespoke, centralized Operational Command Centers. Transform fragmented legacy data into scalable intelligence.
+        <p class="text-base md:text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed font-light px-2">
+            We build bespoke, centralized Operational Command Centers. Transform fragmented legacy data into scalable enterprise intelligence.
         </p>
-        <div class="flex flex-col sm:flex-row gap-6">
-            <a href="book-demo.html" class="bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-gray-200 transition text-sm uppercase tracking-wide">Initialize Project</a>
+        <div class="flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto px-4 sm:px-0">
+            <a href="book-demo.html" class="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-gray-200 transition text-sm uppercase tracking-wide text-center">Book a Demo</a>
         </div>
     </section>
 
-    <section id="problem" class="py-32 relative">
-        <div class="absolute inset-0 bg-black/80 z-0"></div> <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-3xl md:text-5xl font-bold mb-8 tracking-tight">Are you running your SMME on fragmented spreadsheets?</h2>
-            <p class="text-gray-400 text-lg leading-relaxed font-light">
-                When operations, finance, and compliance live in separate silos, leadership is forced to make critical decisions using outdated information. That is not management. That is guessing. DIMECULTIVA engineers absolute visibility.
+    <section id="about" class="py-24 md:py-32 relative">
+        <div class="absolute inset-0 bg-black/80 z-0"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Who We Are</h2>
+            <p class="text-xl md:text-3xl font-light text-gray-300 leading-relaxed">
+                DIMECULTIVA is a specialized data infrastructure firm. We partner with ambitious SMMEs to eliminate spreadsheet chaos and build the invisible backend that powers modern business. We are engineers, analysts, and architects dedicated to bringing enterprise-grade visibility to growing companies.
             </p>
         </div>
     </section>
 
-    <section id="services" class="py-32 px-6 max-w-7xl mx-auto relative z-10">
-        <div class="mb-20">
+    <section id="services" class="py-24 md:py-32 px-6 max-w-7xl mx-auto relative z-10">
+        <div class="mb-16 md:mb-20 text-center md:text-left">
             <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Core Capabilities</h2>
-            <p class="text-3xl font-bold max-w-2xl">End-to-end data architecture for modern enterprises.</p>
+            <p class="text-2xl md:text-3xl font-bold max-w-2xl">End-to-end data architecture.</p>
         </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="glass-card p-10 rounded-sm service-card">
-                <h3 class="text-xl font-bold mb-4">Data Engineering</h3>
-                <p class="text-gray-400 text-sm leading-relaxed font-light">Automated ETL pipelines, secure data warehousing, and API integrations. We build the invisible infrastructure that powers your business.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glass-card p-8 md:p-10 rounded-sm service-card">
+                <h3 class="text-lg md:text-xl font-bold mb-4">Data Engineering</h3>
+                <p class="text-gray-400 text-sm leading-relaxed font-light">Automated ETL pipelines, secure data warehousing, and API integrations. We build the robust infrastructure that scales with your operations.</p>
             </div>
-            <div class="glass-card p-10 rounded-sm service-card">
-                <h3 class="text-xl font-bold mb-4">Business Analytics</h3>
-                <p class="text-gray-400 text-sm leading-relaxed font-light">Live operational dashboards, revenue tracking, and executive intelligence hubs. Stop waiting for end-of-month reports.</p>
+            <div class="glass-card p-8 md:p-10 rounded-sm service-card">
+                <h3 class="text-lg md:text-xl font-bold mb-4">Business Analytics</h3>
+                <p class="text-gray-400 text-sm leading-relaxed font-light">Live operational dashboards, revenue tracking, and executive intelligence hubs. Stop waiting for end-of-month manual reporting.</p>
             </div>
-            <div class="glass-card p-10 rounded-sm service-card">
-                <h3 class="text-xl font-bold mb-4">Data Governance</h3>
-                <p class="text-gray-400 text-sm leading-relaxed font-light">POPIA compliance tracking, role-based access control (RBAC), and strict data lifecycle management to mitigate regulatory risk.</p>
+            <div class="glass-card p-8 md:p-10 rounded-sm service-card">
+                <h3 class="text-lg md:text-xl font-bold mb-4">Data Governance</h3>
+                <p class="text-gray-400 text-sm leading-relaxed font-light">POPIA compliance tracking, role-based access control (RBAC), and strict data lifecycle management to mitigate regulatory risks.</p>
             </div>
-            <div class="glass-card p-10 rounded-sm service-card">
-                <h3 class="text-xl font-bold mb-4">AI Integration</h3>
-                <p class="text-gray-400 text-sm leading-relaxed font-light">Predictive modeling, automated risk exception flagging, and intelligent business advisors trained on your operational data.</p>
-            </div>
-            <div class="glass-card p-10 rounded-sm service-card">
-                <h3 class="text-xl font-bold mb-4">Corporate Training</h3>
-                <p class="text-gray-400 text-sm leading-relaxed font-light">Technical upskilling for your workforce. We train your teams on data literacy, BI tools, and modern operational frameworks.</p>
+            <div class="glass-card p-8 md:p-10 rounded-sm service-card">
+                <h3 class="text-lg md:text-xl font-bold mb-4">AI Integration</h3>
+                <p class="text-gray-400 text-sm leading-relaxed font-light">Predictive modeling, automated risk exception flagging, and intelligent business advisors trained strictly on your secure operational data.</p>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/27763088254" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+    <section id="why-us" class="py-24 md:py-32 relative border-t border-gray-900 bg-[#080808]">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">The Advantage</h2>
+                <p class="text-2xl md:text-3xl font-bold">Why businesses choose DIMECULTIVA.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <div class="text-white font-bold mb-3 text-lg">Bespoke Architecture</div>
+                    <p class="text-gray-400 text-sm font-light">We do not force your business into generic SaaS templates. We engineer custom databases and dashboards that map precisely to your unique workflows.</p>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-3 text-lg">Agnostic Integration</div>
+                    <p class="text-gray-400 text-sm font-light">Whether you use legacy ERPs, local Excel files, or modern cloud software, our pipelines extract and unify data from any source into a single source of truth.</p>
+                </div>
+                <div>
+                    <div class="text-white font-bold mb-3 text-lg">Absolute Security</div>
+                    <p class="text-gray-400 text-sm font-light">Enterprise-grade encryption, tenant isolation, and strict role-based access controls ensure your financial and operational data remains fiercely protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/27763088254" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" md:width="28" md:height="28" fill="currentColor" viewBox="0 0 16 16">
             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
         </svg>
     </a>
 
-    <footer class="bg-black py-10 text-center text-gray-600 text-xs border-t border-gray-900 relative z-10">
-        &copy; 2026 DIMECULTIVA (Pty) Ltd. Secure Data Infrastructure.
+    <footer class="bg-black pt-16 pb-8 border-t border-gray-900 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div>
+                <div class="text-xl font-extrabold tracking-widest uppercase mb-4 text-white">DIMECULTIVA</div>
+                <p class="text-gray-500 text-sm font-light max-w-xs">Premium data infrastructure and operational intelligence for modern SMMEs.</p>
+            </div>
+            <div class="md:text-right">
+                <div class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">Contact Direct</div>
+                <p class="text-gray-300 text-sm mb-2 hover:text-white transition"><a href="mailto:keo@dimecultiva.co.za">keo@dimecultiva.co.za</a></p>
+                <p class="text-gray-300 text-sm hover:text-white transition"><a href="tel:+27763088254">076 308 8254</a></p>
+            </div>
+        </div>
+        <div class="text-center text-gray-700 text-xs mt-8">
+            &copy; 2026 DIMECULTIVA (Pty) Ltd. Secure Data Infrastructure.
+        </div>
     </footer>
 
     <script>
